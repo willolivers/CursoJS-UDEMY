@@ -18,10 +18,6 @@ function meuEscopo(){
         peso: peso.value,
         altura: altura.value
     })
-
-    let contador = pessoas
-
-    console.log(pessoas)
     
     resultado.innerHTML += `<p>${nome.value} ${sobrenome.value} tem o peso de ${peso.value} kg e tem a altura de ${altura.value} Metros </p>`
   }
