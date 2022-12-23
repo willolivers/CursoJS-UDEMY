@@ -84,9 +84,13 @@ form button:active{
     background-color: #086a71;
 }
 
-.res{
+.paragrafo-resultado, .bad{
     margin: 20px 0px;
     background-color: #03b8c5;
     padding: 20px;
     color: #fff;
+}
+
+.bad{
+    background-color: #ee6139;
 }
