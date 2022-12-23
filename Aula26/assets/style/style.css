@@ -13,9 +13,12 @@
     outline: 0px;
 }
 
+
 body{
     background: var(--degrade-color);
-    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -26,15 +29,21 @@ body{
 }
 
 .container{
-    max-width: 600px;
+    width: 620px;
     background-color: rgba(255, 255, 255, 0.87);
     padding: 30px 40px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.338);
     border-radius: 10px;
 }
 
-.container h1,p{
-    margin: 10px 0px;
+.container h1{
+    padding-bottom: 20px;
+}
+
+.tabela{
+    display: flex;
+    gap: 110px;
+    margin-bottom: 20px;
 }
 
 form{
@@ -73,4 +82,12 @@ form button:hover{
 
 form button:active{
     background-color: #086a71;
+}
+
+.res{
+    margin: 20px 0px;
+    background-color: #03b8c5;
+    padding: 20px;
+    color: #fff;
+
 }

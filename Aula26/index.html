@@ -5,34 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>IMC</title>
     <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
     <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, sapiente. Repudiandae iste odio aut tempora
-            similique veritatis reiciendis doloribus ex numquam eum sapiente libero, veniam consequatur mollitia saepe
-            deserunt quos!
-        </p>
+        <h1>Tabela IMC</h1>
+        <div class="tabela">
+            <article>
+                <h3>IMC</h3>
+                <p>Menos do que 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Mais do que 40</p>
+            </article>
+            <article>
+                <h3>Resultado</h3>
+                <p>Abaixo do peso</p>
+                <p>Peso normal</p>
+                <p>Sobrepeso</p>
+                <p>Obesidade grau 1</p>
+                <p>Obesidade grau 2</p>
+                <p>Obesidade grau 3</p>
+            </article>
+        </div>
 
-        <form action="">
-            <label for="input-test-1">Label teste #1</label>
-            <input type="text" id="input-teste-1">
+        <h1>Calcule o IMC</h1>
 
-            <label for="input-test-2">Label teste #2</label>
-            <input type="password" id="input-teste-2">
+        <form action="" class="form">
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso">
 
-            <label for="input-test-3">Label teste #3</label>
-            <input type="email" id="input-teste-3">
-
-            <label for="input-test-4">Label teste #4</label>
-            <input type="number" id="input-teste-4">
-
-            <button>Enviar</button>
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura">
+            <button onclick="calc()">Calcular</button>
         </form>
+
+        <div class="res"></div>
     </section>
 
     <script src="assets/js/index.js"></script>
