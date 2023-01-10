@@ -14,7 +14,7 @@
 }
 
 body{
-    background: var(--degrade-color);
+    background: green;
     width: 100vw;
     height: 100vh;
     display: flex;
