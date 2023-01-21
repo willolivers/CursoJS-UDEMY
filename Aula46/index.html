@@ -10,9 +10,9 @@
     <time id="hora"></time>
     <script>
         const mostraHora = () => {
-    let data = new Date()
-    let hora = document.getElementById("hora");
-    hora.innerText = data.toLocaleTimeString('pt-BR', {
+        let data = new Date()
+        let hora = document.getElementById("hora");
+        hora.innerText = data.toLocaleTimeString('pt-BR', {
         hour12: false
     });
 }
