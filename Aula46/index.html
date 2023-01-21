@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <time id="hora"></time>
+    <script>
+        const mostraHora = () => {
+    let data = new Date()
+    let hora = document.getElementById("hora");
+    hora.innerText = data.toLocaleTimeString('pt-BR', {
+        hour12: false
+    });
+}
+setInterval(mostraHora, 1000);
+
+    </script>
+</body>
+</html>
