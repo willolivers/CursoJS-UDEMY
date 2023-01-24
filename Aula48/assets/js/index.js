@@ -4,7 +4,7 @@ const tarefas = document.querySelector('.tarefas');
 
 function criaLi() {
     const li = document.createElement('li');
-    return li;
+    return li; 
 }
 
 inputTarefa.addEventListener('keypress', function(e) {
@@ -29,7 +29,7 @@ function criaBtnApagar(li) {
 
 function criaTarefa(textoInput) {
     const li = criaLi();
-    li.innerHTML = textoInput;
+    li.innerText = textoInput;
     tarefas.appendChild(li);
     limpaInput();
     criaBtnApagar(li);
