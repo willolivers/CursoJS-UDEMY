@@ -1,5 +1,10 @@
-function funcao(a, b, c) {
-    
-   console.log(a + b + c)
+function conta(operador, acumulador, ...numeros) {
+  for(let numero of numeros){
+   if(operador === '+') acumulador += numero
+   if(operador === '-') acumulador -= numero
+   if(operador === '/') acumulador /= numero
+   if(operador === '*') acumulador *= numero
+  }
+  console.log(acumulador)
 }
-funcao(2, 4);
+conta('+', 0, 20, 30, 40, 50)
