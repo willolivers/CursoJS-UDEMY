@@ -35,6 +35,7 @@ console.log(p1.nomeCompleto)
 
 //CONSTRUCTOR FUNCTION
 
+/*
 function Pessoa(nome, sobrenome) { 
     this.nome = nome
     this.sobrenome = sobrenome
@@ -42,5 +43,15 @@ function Pessoa(nome, sobrenome) {
 
 const p1 = new Pessoa('Jessé', 'Oliveira')
 console.log(p1)
+*/
 
+function Carro(marca, ano, cor) {
+    this.marca = marca,
+    this.ano = ano,
+    this.cor = cor
+}
 
+const c1 = new Carro('Ford', '1988', 'Azul')
+const c2 = new Carro('Maverick', '1998', 'Vermelho')
+
+console.log(c1['cor'], c2.ano)
