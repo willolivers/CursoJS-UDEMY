@@ -17,7 +17,7 @@ function Produto(nome, preco, estoque){
         preco: {
             enumerable: true, // mostra a chave
             value: preco, // valor
-            writable: true, // pode alterar
+            writable: true , // pode alterar
             configurable: true // configuravel se for true
         }
     })
