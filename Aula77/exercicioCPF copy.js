@@ -4,7 +4,7 @@ function ValidaCpf (cpfEnviado) {
         get: function () {
             return cpfEnviado.replace(/\D+/g, '');
         }
-    });
+    }); 
 };
 
 ValidaCpf.prototype.verificaCpf = function () {
@@ -12,6 +12,8 @@ ValidaCpf.prototype.verificaCpf = function () {
     if (this.cpfLimpo.length !== 11) return false
     return true;
 };
+
+//teste
 
 const cpf = new ValidaCpf('619.373.923-84');
 console.log(cpf.cpfLimpo)
